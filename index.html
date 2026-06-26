@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aman Technologies – We Build Stunning Digital Experiences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__brand">
+          <img src="logo.svg" alt="My logo" class="logo"> 
+          <span class="nav__company">Aman Technologies</span>
+        </a>
+
+        <ul class="nav__links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary nav__cta">Get a Quote</a>
+
+        <button class="nav__hamburger" onclick="toggleMenu(this)" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+    </div>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════════ HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__inner">
+
+        <!-- Left: copy -->
+        <div class="hero__left">
+          <div class="hero__tag">✦ Digital Agency</div>
+          <h1 class="hero__title">We Build <span>Stunning</span><br>Digital Experiences</h1>
+          <p class="hero__desc">
+            Aman Technologies partners with businesses to create professional websites,
+            distinctive branding, and intuitive interfaces — so your digital presence
+            works as hard as you do.
+          </p>
+          <div class="hero__actions">
+            <a href="services.html" class="btn btn-primary">Explore Our Services →</a>
+            <a href="projects.html" class="btn btn-outline-white">View Our Projects</a>
+          </div>
+        </div>
+
+        <!-- Right: mockup illustration -->
+        <div class="hero__visual">
+          <div class="hero__screen">
+            <div class="hero__screen-bar">
+              <div class="hero__screen-dot" style="background:#FF5F56"></div>
+              <div class="hero__screen-dot" style="background:#FFBD2E"></div>
+              <div class="hero__screen-dot" style="background:#27C840"></div>
+            </div>
+            <div class="hero__screen-body">
+              <div class="hero__mockup-nav"></div>
+              <div class="hero__mockup-hero">
+                <div class="hero__mockup-line"></div>
+                <div class="hero__mockup-btn"></div>
+              </div>
+              <div class="hero__mockup-cards">
+                <div class="hero__mockup-card"></div>
+                <div class="hero__mockup-card" style="background:rgba(11,22,55,0.08)"></div>
+                <div class="hero__mockup-card" style="background:rgba(11,22,55,0.05)"></div>
+              </div>
+              <div class="hero__mockup-footer"></div>
+            </div>
+          </div>
+
+          <!-- Floating badges -->
+          <div class="hero__badge hero__badge--tl">
+            <div class="hero__badge-icon" style="background:rgba(0,201,200,0.15)">💡</div>
+            <div>
+              <div style="font-size:0.7rem;color:var(--text-muted);font-weight:500">Projects Done</div>
+              <div>120+</div>
+            </div>
+          </div>
+          <div class="hero__badge hero__badge--br">
+            <div class="hero__badge-icon" style="background:rgba(11,22,55,0.08)">⭐</div>
+            <div>
+              <div style="font-size:0.7rem;color:var(--text-muted);font-weight:500">Client Rating</div>
+              <div>5.0 / 5.0</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ ABOUT PREVIEW -->
+  <section class="section">
+    <div class="container">
+      <div class="about-preview__inner">
+
+        <!-- Stats grid -->
+        <div class="about-preview__visual">
+          <div class="about-preview__stat">
+            <div class="about-preview__stat-num">120+</div>
+            <div class="about-preview__stat-label">Projects Delivered</div>
+          </div>
+          <div class="about-preview__stat about-preview__stat--accent">
+            <div class="about-preview__stat-num">48</div>
+            <div class="about-preview__stat-label" style="color:rgba(255,255,255,0.6)">Happy Clients</div>
+          </div>
+          <div class="about-preview__stat about-preview__stat--accent">
+            <div class="about-preview__stat-num">6</div>
+            <div class="about-preview__stat-label" style="color:rgba(255,255,255,0.6)">Years of Experience</div>
+          </div>
+          <div class="about-preview__stat">
+            <div class="about-preview__stat-num">4</div>
+            <div class="about-preview__stat-label">Core Services</div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="about-preview__content">
+          <div class="eyebrow">Who We Are</div>
+          <h2 class="section-title">A Creative Agency Built for the Digital Age</h2>
+          <p class="about-preview__text">
+            Aman Technologies is a creative digital agency helping businesses build a strong
+            and lasting online presence. We combine technology and design thinking to deliver
+            innovative solutions — from responsive websites to polished brand identities —
+            that connect companies with the audiences that matter most.
+          </p>
+          <p class="about-preview__text">
+            Our cross-disciplinary team brings together developers, designers, and strategists
+            who genuinely care about the work and the people behind every project.
+          </p>
+          <div>
+            <a href="about.html" class="btn btn-outline">Learn More About Us →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ SERVICES -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="services__head">
+        <div>
+          <div class="eyebrow">What We Do</div>
+          <h2 class="section-title">Our Services</h2>
+        </div>
+        <a href="services.html" class="btn btn-outline">View All Services</a>
+      </div>
+      <div class="services__grid">
+        <div class="service-card">
+          <div class="service-card__icon">🌐</div>
+          <div class="service-card__name">Web Development</div>
+          <p class="service-card__desc">Custom, fast, and responsive websites built with modern frameworks and clean code.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">🎨</div>
+          <div class="service-card__name">Graphic Design</div>
+          <p class="service-card__desc">Eye-catching visuals — from marketing materials to social content — that tell your story.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">✦</div>
+          <div class="service-card__name">Branding</div>
+          <p class="service-card__desc">Logos, guidelines, and brand systems that make your business instantly recognizable.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">📐</div>
+          <div class="service-card__name">UI/UX Design</div>
+          <p class="service-card__desc">Wireframes, prototypes, and user experiences designed to delight and convert.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ PROJECTS -->
+  <section class="section">
+    <div class="container">
+      <div class="projects__head">
+        <div class="eyebrow">Our Portfolio</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-sub">A glimpse at the work we're proud of — built with care, shipped on time.</p>
+      </div>
+      <div class="projects__grid">
+
+        <div class="project-card">
+          <div class="project-card__thumb" style="background:linear-gradient(135deg,#0B1637 0%,#1A3590 100%)">
+            <span>🛒</span>
+            <div class="project-card__thumb-label">E-Commerce</div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__title">NexaShop E-Commerce</div>
+            <p class="project-card__desc">A high-performance online store with a seamless checkout experience and custom CMS integration.</p>
+            <a href="projects.html" class="project-card__link">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__thumb" style="background:linear-gradient(135deg,#1A2F6A 0%,#00A8A7 100%)">
+            <span>📱</span>
+            <div class="project-card__thumb-label">Mobile UI</div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__title">Pulse Finance App</div>
+            <p class="project-card__desc">A clean and intuitive mobile banking app UI, designed to simplify personal finance management.</p>
+            <a href="projects.html" class="project-card__link">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__thumb" style="background:linear-gradient(135deg,#162247 0%,#2D1B69 100%)">
+            <span>✦</span>
+            <div class="project-card__thumb-label">Branding</div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__title">Elara Brand Identity</div>
+            <p class="project-card__desc">A complete brand system — logo, palette, typography, and usage guidelines — for a wellness startup.</p>
+            <a href="projects.html" class="project-card__link">View Project →</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="projects__foot">
+        <a href="projects.html" class="btn btn-outline">See More Projects</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ WHY US -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="why__head">
+        <div class="eyebrow">Why Work With Us</div>
+        <h2 class="section-title">Built on Trust, Delivered with Excellence</h2>
+        <p class="section-sub">What sets us apart isn't just the work — it's how we work.</p>
+      </div>
+      <div class="why__grid">
+        <div class="why-card">
+          <div class="why-card__icon">💡</div>
+          <div class="why-card__title">Innovative Solutions</div>
+          <p class="why-card__desc">We stay ahead of digital trends, bringing fresh thinking and proven methods to every project.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">👥</div>
+          <div class="why-card__title">Professional Team</div>
+          <p class="why-card__desc">Senior designers and developers who care deeply about quality — and bring it to every deadline.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">⏱</div>
+          <div class="why-card__title">Timely Delivery</div>
+          <p class="why-card__desc">Realistic timelines, transparent progress updates, and a track record of shipping on schedule.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">🎯</div>
+          <div class="why-card__title">Customer-Centered</div>
+          <p class="why-card__desc">Your goals drive every decision. We listen first, build second, and iterate until it's right.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ TESTIMONIALS -->
+  <section class="section">
+    <div class="container">
+      <div class="testimonials__head">
+        <div class="eyebrow">What Clients Say</div>
+        <h2 class="section-title">Words from People We've Worked With</h2>
+        <p class="section-sub">Genuine feedback from clients who trusted us with their digital vision.</p>
+      </div>
+      <div class="testimonials__grid">
+
+        <div class="testi-card">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__quote">
+            "Aman Technologies redesigned our entire website in just three weeks. The result was
+            beyond what we imagined — clean, fast, and perfectly on-brand. We've seen a 40%
+            jump in lead conversions since launch."
+          </p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar" style="background:var(--cyan);color:var(--navy)">SM</div>
+            <div>
+              <div class="testi-card__name">Sarah M.</div>
+              <div class="testi-card__company">CEO, BrightPath Solutions</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__quote">
+            "The branding work they did for us was exceptional. They truly understood our
+            vision and translated it into a visual identity that feels both modern and timeless.
+            Highly recommend the whole team."
+          </p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar" style="background:#6366F1">AK</div>
+            <div>
+              <div class="testi-card__name">Ahmed K.</div>
+              <div class="testi-card__company">Founder, Elara Wellness</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__quote">
+            "Working with Aman was refreshingly straightforward — clear communication,
+            no hidden surprises, and the UI they designed has received consistent praise
+            from our users and stakeholders alike."
+          </p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar" style="background:#F59E0B;color:var(--navy)">LN</div>
+            <div>
+              <div class="testi-card__name">Lina N.</div>
+              <div class="testi-card__company">Product Lead, Pulse Finance</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ FINAL CTA -->
+  <section class="cta">
+    <div class="container">
+      <div class="eyebrow cta__eyebrow">Start Today</div>
+      <h2 class="cta__title">Ready to Transform Your Business?</h2>
+      <p class="cta__sub">
+        Let's build something exceptional together. Tell us about your project and
+        we'll get back to you within 24 hours.
+      </p>
+      <div class="cta__actions">
+        <a href="contact.html" class="btn btn-primary">Contact Us →</a>
+        <a href="contact.html" class="btn btn-outline-white">Request a Quote</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Col 1: Brand -->
+        <div class="footer__col">
+          <div class="footer__brand">
+            <div class="nav__logo-box">A</div>
+            <span class="footer__brand-name">Aman Technologies</span>
+          </div>
+          <p class="footer__tagline">
+            Designing and building digital experiences that move businesses forward.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer__col">
+          <div class="footer__col-title">Quick Links</div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div class="footer__col">
+          <div class="footer__col-title">Services</div>
+          <ul>
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Graphic Design</a></li>
+            <li><a href="services.html">Branding</a></li>
+            <li><a href="services.html">UI/UX Design</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div class="footer__col">
+          <div class="footer__col-title">Contact Us</div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">✉</span>
+            <span>hello@amantechnologies.com</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📞</span>
+            <span>+1 (555) 000-0000</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📍</span>
+            <span>123 Digital Ave, Tech City</span>
+          </div>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Twitter/X">𝕏</a>
+            <a href="#" aria-label="Instagram">ig</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        © 2026 <span>Aman Technologies</span>. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════ JS -->
+  <script>
+    function toggleMenu(btn) {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
