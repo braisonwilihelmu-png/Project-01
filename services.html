@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services – Aman Technologies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════ NAV ══════════════════════ -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+
+        <a href="index.html" class="nav__brand">
+          <div class="nav__logo-box">A</div>
+          <span class="nav__company">Aman Technologies</span>
+        </a>
+
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary nav__cta">Get a Quote</a>
+
+        <button class="nav__hamburger" onclick="toggleMenu(this)" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+    </div>
+  </nav>
+
+
+  <!-- ══════════════════════ PAGE HERO ══════════════════════ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__inner">
+
+        <!-- Left: copy -->
+        <div>
+          <div class="hero__tag">✦ What We Offer</div>
+          <h1 class="hero__title">Digital Solutions<br>Designed for<br><span>Your Success</span></h1>
+          <p class="hero__desc">
+            From pixel-perfect websites to unforgettable brand identities, Aman Technologies
+            delivers creative and technology-driven services that help businesses establish,
+            grow, and lead in the digital world.
+          </p>
+          <a href="contact.html" class="btn btn-primary">Request a Quote →</a>
+        </div>
+
+        <!-- Right: CSS service tiles illustration -->
+        <div class="hero__visual">
+          <div class="hero__svc-tile hero__svc-tile--1">
+            <div class="hero__svc-tile-icon">🌐</div>
+            <div class="hero__svc-tile-name">Web Development</div>
+            <div class="hero__svc-tile-line"></div>
+          </div>
+          <div class="hero__svc-tile hero__svc-tile--2">
+            <div class="hero__svc-tile-icon">🎨</div>
+            <div class="hero__svc-tile-name" style="color:var(--navy)">Graphic Design</div>
+            <div class="hero__svc-tile-line" style="background:rgba(11,22,55,0.20)"></div>
+          </div>
+          <div class="hero__svc-tile hero__svc-tile--3">
+            <div class="hero__svc-tile-icon">✦</div>
+            <div class="hero__svc-tile-name">Branding</div>
+            <div class="hero__svc-tile-line"></div>
+          </div>
+          <div class="hero__svc-tile hero__svc-tile--4">
+            <div class="hero__svc-tile-icon">📐</div>
+            <div class="hero__svc-tile-name">UI/UX Design</div>
+            <div class="hero__svc-tile-line"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════ OUR SERVICES ══════════════════════ -->
+  <section class="section">
+    <div class="container">
+
+      <div class="services__head">
+        <div class="eyebrow">What We Do</div>
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-sub">Four disciplines. One agency. Everything you need to build and grow your digital presence.</p>
+      </div>
+
+      <div class="services__grid">
+
+        <!-- Web Development -->
+        <div class="svc-card">
+          <div class="svc-card__top">
+            <div class="svc-card__icon">🌐</div>
+            <div>
+              <div class="svc-card__title">Web Development</div>
+              <p class="svc-card__desc">
+                We build fast, secure, and fully responsive websites that work beautifully on
+                every screen. Whether you need a simple landing page or a complex business site,
+                we deliver clean code and great results.
+              </p>
+            </div>
+          </div>
+          <div class="svc-card__divider"></div>
+          <div class="svc-card__features-label">What's included</div>
+          <div class="svc-card__features">
+            <div class="svc-card__feature">Business Websites</div>
+            <div class="svc-card__feature">Portfolio Websites</div>
+            <div class="svc-card__feature">Company Websites</div>
+            <div class="svc-card__feature">Landing Pages</div>
+            <div class="svc-card__feature">Responsive Design</div>
+            <div class="svc-card__feature">Website Maintenance</div>
+            <div class="svc-card__feature">Performance Optimization</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline-cyan">Learn More →</a>
+        </div>
+
+        <!-- Graphic Design -->
+        <div class="svc-card">
+          <div class="svc-card__top">
+            <div class="svc-card__icon">🎨</div>
+            <div>
+              <div class="svc-card__title">Graphic Design</div>
+              <p class="svc-card__desc">
+                Compelling visuals that capture attention and communicate your message clearly.
+                From print to digital, our design work helps your brand stand out wherever
+                your audience sees it.
+              </p>
+            </div>
+          </div>
+          <div class="svc-card__divider"></div>
+          <div class="svc-card__features-label">What's included</div>
+          <div class="svc-card__features">
+            <div class="svc-card__feature">Logo Design</div>
+            <div class="svc-card__feature">Posters & Flyers</div>
+            <div class="svc-card__feature">Social Media Graphics</div>
+            <div class="svc-card__feature">Business Cards</div>
+            <div class="svc-card__feature">Brochures</div>
+            <div class="svc-card__feature">Marketing Materials</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline-cyan">Learn More →</a>
+        </div>
+
+        <!-- Branding -->
+        <div class="svc-card">
+          <div class="svc-card__top">
+            <div class="svc-card__icon">✦</div>
+            <div>
+              <div class="svc-card__title">Branding</div>
+              <p class="svc-card__desc">
+                A strong brand is more than a logo — it's the full story you tell the world.
+                We craft cohesive brand identities that build recognition, trust, and long-term
+                loyalty for your business.
+              </p>
+            </div>
+          </div>
+          <div class="svc-card__divider"></div>
+          <div class="svc-card__features-label">What's included</div>
+          <div class="svc-card__features">
+            <div class="svc-card__feature">Brand Identity Design</div>
+            <div class="svc-card__feature">Logo Systems</div>
+            <div class="svc-card__feature">Brand Guidelines</div>
+            <div class="svc-card__feature">Color Palette Selection</div>
+            <div class="svc-card__feature">Typography Systems</div>
+            <div class="svc-card__feature">Business Identity Packages</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline-cyan">Learn More →</a>
+        </div>
+
+        <!-- UI/UX Design -->
+        <div class="svc-card">
+          <div class="svc-card__top">
+            <div class="svc-card__icon">📐</div>
+            <div>
+              <div class="svc-card__title">UI/UX Design</div>
+              <p class="svc-card__desc">
+                Interfaces that are a pleasure to use. We research, wireframe, prototype,
+                and refine until every interaction feels intuitive — whether for a website,
+                web app, or mobile product.
+              </p>
+            </div>
+          </div>
+          <div class="svc-card__divider"></div>
+          <div class="svc-card__features-label">What's included</div>
+          <div class="svc-card__features">
+            <div class="svc-card__feature">User Interface Design</div>
+            <div class="svc-card__feature">UX Research</div>
+            <div class="svc-card__feature">Website Wireframes</div>
+            <div class="svc-card__feature">Interactive Prototypes</div>
+            <div class="svc-card__feature">Mobile App Design</div>
+            <div class="svc-card__feature">Design Systems</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline-cyan">Learn More →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════ HOW WE WORK ══════════════════════ -->
+  <section class="section section--alt">
+    <div class="container">
+
+      <div class="process__head">
+        <div class="eyebrow">Our Approach</div>
+        <h2 class="section-title">How We Work</h2>
+        <p class="section-sub">A clear, collaborative process so you always know what's happening and what comes next.</p>
+      </div>
+
+      <div class="process__steps">
+
+        <div class="process__step process__step--active">
+          <div class="process__step-num">1</div>
+          <div class="process__step-title">Consultation</div>
+          <p class="process__step-desc">We start by listening — understanding your goals, your audience, and what success looks like for you.</p>
+        </div>
+
+        <div class="process__step">
+          <div class="process__step-num">2</div>
+          <div class="process__step-title">Planning & Strategy</div>
+          <p class="process__step-desc">We build a clear project roadmap with milestones, timelines, and defined deliverables — no surprises.</p>
+        </div>
+
+        <div class="process__step">
+          <div class="process__step-num">3</div>
+          <div class="process__step-title">Design & Development</div>
+          <p class="process__step-desc">Our team gets to work building creative, functional digital solutions with regular check-ins along the way.</p>
+        </div>
+
+        <div class="process__step">
+          <div class="process__step-num">4</div>
+          <div class="process__step-title">Launch & Support</div>
+          <p class="process__step-desc">We deliver the finished project and stay available for questions, updates, and ongoing support.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════ WHY CHOOSE US ══════════════════════ -->
+  <section class="section">
+    <div class="container">
+
+      <div class="why__head">
+        <div class="eyebrow">Why Aman Technologies</div>
+        <h2 class="section-title">What Makes Us Different</h2>
+        <p class="section-sub">We hold ourselves to a high standard — and these are the qualities our clients keep coming back for.</p>
+      </div>
+
+      <div class="why__grid">
+        <div class="why-card">
+          <div class="why-card__icon">🏆</div>
+          <div class="why-card__title">Experienced Team</div>
+          <p class="why-card__desc">Years of hands-on work across industries mean we know how to solve real problems — not just design pretty things.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">💡</div>
+          <div class="why-card__title">Creative Solutions</div>
+          <p class="why-card__desc">We bring fresh thinking to every brief. No generic templates — every project is built specifically for your brand and goals.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">⚙️</div>
+          <div class="why-card__title">Modern Technologies</div>
+          <p class="why-card__desc">We use current, proven tools and frameworks so your product is fast, secure, and easy to maintain long-term.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">⚡</div>
+          <div class="why-card__title">Fast Turnaround</div>
+          <p class="why-card__desc">We respect your deadlines. Our efficient process keeps projects moving without cutting corners on quality.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">🛡</div>
+          <div class="why-card__title">Reliable Support</div>
+          <p class="why-card__desc">The project doesn't end at launch. We're here for adjustments, maintenance, and whatever comes next.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">🎯</div>
+          <div class="why-card__title">Client Satisfaction</div>
+          <p class="why-card__desc">Your success is the measure of ours. We iterate, listen, and refine until you're genuinely happy with the result.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════ FAQ ══════════════════════ -->
+  <section class="section section--alt">
+    <div class="container">
+
+      <div class="faq__head">
+        <div class="eyebrow">Got Questions?</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-sub">Answers to the questions we hear most often. Don't see yours? Just reach out.</p>
+      </div>
+
+      <div class="faq__list">
+
+        <div class="faq-item">
+          <button class="faq-item__trigger" onclick="toggleFaq(this)">
+            How long does a project take?
+            <div class="faq-item__icon">+</div>
+          </button>
+          <div class="faq-item__body">
+            <p>Timelines vary depending on the scope and complexity of your project. A simple landing page can be ready in one to two weeks, while a full brand identity or multi-page website typically takes four to eight weeks. We'll agree on a realistic timeline during our initial consultation and keep you updated throughout.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__trigger" onclick="toggleFaq(this)">
+            Do you redesign existing websites?
+            <div class="faq-item__icon">+</div>
+          </button>
+          <div class="faq-item__body">
+            <p>Yes — redesigns are a significant part of what we do. We'll audit your current site, identify what's working and what isn't, and rebuild it to be faster, better-looking, and more effective for your visitors. We can work with your existing content or start fresh.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__trigger" onclick="toggleFaq(this)">
+            Can you create a custom brand identity for my business?
+            <div class="faq-item__icon">+</div>
+          </button>
+          <div class="faq-item__body">
+            <p>Absolutely. Our branding service covers everything from your logo and color palette to typography, brand guidelines, and business identity packages. We take the time to understand your business, your audience, and your values before we design anything, so the result is genuinely yours.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__trigger" onclick="toggleFaq(this)">
+            Do you provide ongoing support after project completion?
+            <div class="faq-item__icon">+</div>
+          </button>
+          <div class="faq-item__body">
+            <p>Yes. We offer post-launch support and website maintenance to keep your site up-to-date, secure, and running smoothly. Whether you need occasional updates or a regular maintenance plan, we can put together something that works for your needs and budget.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__trigger" onclick="toggleFaq(this)">
+            How do I request a quotation?
+            <div class="faq-item__icon">+</div>
+          </button>
+          <div class="faq-item__body">
+            <p>It's straightforward — just head to our Contact page and fill in the form, or send us an email directly. Tell us what you're looking to build, your approximate timeline, and any specific requirements. We'll review your request and get back to you with a detailed quote within one to two business days.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════ CTA ══════════════════════ -->
+  <section class="cta">
+    <div class="container">
+      <div class="eyebrow cta__eyebrow">Ready to Start?</div>
+      <h2 class="cta__title">Let's Build Something Amazing Together</h2>
+      <p class="cta__sub">
+        Tell us about your project and we'll put together a tailored proposal.
+        No obligation — just a conversation about what we can build for you.
+      </p>
+      <div class="cta__actions">
+        <a href="contact.html" class="btn btn-primary">Contact Us →</a>
+        <a href="contact.html" class="btn btn-outline-white">Request a Quote</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════ FOOTER ══════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Col 1: Brand -->
+        <div class="footer__col">
+          <div class="footer__brand">
+            <div class="nav__logo-box">A</div>
+            <span class="footer__brand-name">Aman Technologies</span>
+          </div>
+          <p class="footer__tagline">
+            Designing and building digital experiences that move businesses forward.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer__col">
+          <div class="footer__col-title">Quick Links</div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div class="footer__col">
+          <div class="footer__col-title">Services</div>
+          <ul>
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Graphic Design</a></li>
+            <li><a href="services.html">Branding</a></li>
+            <li><a href="services.html">UI/UX Design</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div class="footer__col">
+          <div class="footer__col-title">Contact Us</div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">✉</span>
+            <span>hello@amantechnologies.com</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📞</span>
+            <span>+1 (555) 000-0000</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📍</span>
+            <span>123 Digital Ave, Tech City</span>
+          </div>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Twitter/X">𝕏</a>
+            <a href="#" aria-label="Instagram">ig</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        © 2026 <span>Aman Technologies</span>. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ══════════════════════ JAVASCRIPT ══════════════════════ -->
+  <script src="script.js"></script>
+
+</body>
+</html>
